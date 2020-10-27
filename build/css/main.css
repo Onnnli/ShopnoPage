@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+body {
+  max-width: 1990px;
+  margin: 0 auto;
+  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+header {
+  background-color: rgba(239, 240, 242, 0.99);
+  padding-bottom: 130px; }
+
+.navigation {
+  display: flex;
+  padding-top: 65px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 205px; }
+
+a.logo {
+  border: 6px solid #170f1c;
+  padding: 10px 8px;
+  text-decoration: none; }
+  a.logo .logoText {
+    text-shadow: 0 0 2px rgba(21, 21, 22, 0.75);
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 1.02px;
+    line-height: normal; }
+    a.logo .logoText span {
+      color: #77efe5;
+      font-size: 21px;
+      font-style: normal;
+      letter-spacing: 1.26px;
+      line-height: normal; }
+
+.burger {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1; }
+  .burger #burger__toggle {
+    opacity: 0; }
+  .burger #burger__toggle:checked ~ .burgerLine > span {
+    transform: rotate(45deg); }
+  .burger #burger__toggle:checked ~ .burgerLine > span::before {
+    top: 0;
+    transform: rotate(0); }
+  .burger #burger__toggle:checked ~ .burgerLine > span::after {
+    top: 0;
+    transform: rotate(90deg); }
+  .burger #burger__toggle:checked ~ .navigationMenu {
+    visibility: visible;
+    right: 0; }
+  .burger .burgerLine span {
+    position: absolute;
+    text-align: center;
+    display: block;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #000000;
+    opacity: 0.6;
+    cursor: pointer;
+    right: 0; }
+    .burger .burgerLine span::before, .burger .burgerLine span::after {
+      text-align: center;
+      display: block;
+      width: 30px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: #000000;
+      cursor: pointer; }
+  .burger .burgerLine span::before {
+    content: '';
+    top: -8px;
+    position: absolute; }
+  .burger .burgerLine span::after {
+    content: '';
+    top: 8px;
+    position: absolute; }
+  .burger .navigationMenu {
+    position: fixed;
+    visibility: hidden;
+    width: 300px;
+    height: 360px;
+    right: 0;
+    top: 40px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    background-color: #fff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2); }
+    .burger .navigationMenu::after {
+      content: '';
+      top: -28px;
+      right: 0;
+      position: absolute;
+      border: 15px solid transparent;
+      border-bottom: 15px solid  #fff; }
+    .burger .navigationMenu a {
+      text-align: right;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000000;
+      display: block;
+      padding: 12px 24px;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid #52545869; }
+      .burger .navigationMenu a:hover {
+        background-color: #52545869; }
+
+.headerBlock {
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase; }
+  .headerBlock .titleSection {
+    text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
+    color: #505050;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-weight: 700;
+    font-style: normal;
+    lletter-spacing: 2.7px;
+    line-height: normal;
+    margin-bottom: 25px; }
+    .headerBlock .titleSection span {
+      color: #505050;
+      background-color: rgba(118, 244, 234, 0.5); }
+
+.headerBtn {
+  margin-top: 125px;
+  padding: 15px 48px;
+  border-radius: 2px;
+  border: 2px solid #000000;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 18px; }
+
+.juice {
+  position: relative; }
+  .juice img {
+    position: absolute;
+    top: calc(50% - 30px);
+    right: calc(10% - 30px); }

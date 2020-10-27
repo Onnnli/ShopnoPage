@@ -1,0 +1,67 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href='https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous')
+        link(rel="stylesheet", href="css/main.css")
+        title Shopno one page
+    body
+        header#header
+            .container
+                .navigation
+                    a.logo(href="#header")
+                        p.logoText sh
+                            span o
+                            | pno
+                    .burger
+                        input#burger__toggle(type='checkbox')
+                        label(for="burger__toggle").burgerLine
+                            span
+                        .navigationMenu
+                            a.navigationMenu__link(href="#") ABOUT US
+                            a.navigationMenu__link(href="#") featured works
+                            a.navigationMenu__link(href="#") our services
+                            a.navigationMenu__link(href="#") small team
+                            a.navigationMenu__link(href="#") what they says
+                            a.navigationMenu__link(href="#") contacts
+                .headerBlock
+                    h1.titleSection Say Hello to 
+                        span &nbsp;SHOPNO!&nbsp;
+                    h1.titleSection 
+                        span &nbsp;Agency 
+                        | &nbsp;CORPORATE SHOPNO Theme
+
+                    // modal
+
+                    button.btn.btn-outline-dark.headerBtn.font-weight-bold(type='button' data-toggle='modal' data-target='#exampleModal' data-whatever='@getbootstrap') CONTACT US
+                    #exampleModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                        .modal-dialog(role='document')
+                            .modal-content
+                                .modal-header
+                                    h5#exampleModalLabel.modal-title New message
+                                    button.close(type='button' data-dismiss='modal' aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                .modal-body
+                                    form
+                                        .form-group
+                                            label.col-form-label(for='recipient-name') Recipient:
+                                            input#recipient-name.form-control(type='text' placeholder='SHOPNO')
+                                        .form-group
+                                            label.col-form-label(for='message-text') Message:
+                                            textarea#message-text.form-control(placeholder="MESSAGE")
+                                .modal-footer
+                                    button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+                                    button.btn.btn-primary(type='button') Send message
+                .juice
+                    img(src="img/juice.png", alt="sok")
+
+                    
+
+
+
+
+        //bootstrap          
+        script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous')
+        script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous')

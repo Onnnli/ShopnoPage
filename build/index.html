@@ -1,0 +1,62 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;family=Montserrat:wght@400;500;700&amp;family=Raleway:wght@400;500&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Shopno one page</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="navigation"><a class="logo" href="#header">
+            <p class="logoText">sh<span>o</span>pno</p></a>
+          <div class="burger">
+            <input id="burger__toggle" type="checkbox"/>
+            <label class="burgerLine" for="burger__toggle"><span></span></label>
+            <div class="navigationMenu"><a class="navigationMenu__link" href="#">ABOUT US</a><a class="navigationMenu__link" href="#">featured works</a><a class="navigationMenu__link" href="#">our services</a><a class="navigationMenu__link" href="#">small team</a><a class="navigationMenu__link" href="#">what they says</a><a class="navigationMenu__link" href="#">contacts</a></div>
+          </div>
+        </div>
+        <div class="headerBlock">
+          <h1 class="titleSection">Say Hello to <span>&nbsp;SHOPNO!&nbsp;</span></h1>
+          <h1 class="titleSection"> <span>&nbsp;Agency </span>&nbsp;CORPORATE SHOPNO Theme</h1>
+          <!-- modal-->
+          <button class="btn btn-outline-dark headerBtn font-weight-bold" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">CONTACT US</button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label class="col-form-label" for="recipient-name">Recipient:</label>
+                      <input class="form-control" id="recipient-name" type="text" placeholder="SHOPNO"/>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-form-label" for="message-text">Message:</label>
+                      <textarea class="form-control" id="message-text" placeholder="MESSAGE"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                  <button class="btn btn-primary" type="button">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="juice"><img src="img/juice.png" alt="sok"/></div>
+      </div>
+    </header>
+    <!--bootstrap          -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
