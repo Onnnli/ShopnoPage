@@ -168,6 +168,10 @@ a.logo {
     right: calc(10% - 30px); }
 
 @media screen and (max-width: 576px) {
+  .navigation {
+    margin-bottom: 125px; }
+  .headerBlock .titleSection {
+    font-size: 30px; }
   .juice {
     display: none; } }
 
@@ -175,7 +179,7 @@ section.about_us {
   background-color: #fff;
   padding-top: 140px;
   padding-bottom: 115px; }
-  section.about_us .sectionTitle {
+  section.about_us .titleSection {
     color: #000000;
     font-family: Montserrat;
     font-size: 38px;
@@ -184,4 +188,89 @@ section.about_us {
     letter-spacing: normal;
     line-height: 28px;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 17px; }
+  section.about_us .subtitleSection {
+    color: #000000;
+    font-family: Merriweather;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.62;
+    margin-bottom: 147px; }
+
+.contentSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+#carouselExampleIndicators.carousel.slide {
+  max-width: 480px; }
+
+.slide {
+  position: relative; }
+
+ol.carousel-indicators {
+  position: absolute;
+  bottom: -45px;
+  margin: 0; }
+  ol.carousel-indicators li {
+    margin-right: 1.5px;
+    margin-left: 1.5px;
+    width: 11px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d0d0d0; }
+    ol.carousel-indicators li.active {
+      background-color: #71f6eb; }
+
+.slide-item {
+  width: 480px;
+  background: #eff0f2 linear-gradient(0deg, white 12%, transparent 0%);
+  background-position-y: 35px; }
+  .slide-item img {
+    max-width: 392px;
+    margin: 0 auto; }
+
+.textBlock {
+  max-width: 45%;
+  text-align: left;
+  margin-left: 20px; }
+  .textBlock .textBlock__title {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Merriweather;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 31px; }
+  .textBlock .textBlock__text {
+    color: rgba(0, 0, 0, 0.74);
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    margin-bottom: 38px;
+    letter-spacing: 0.8px; }
+
+@media screen and (max-width: 900px) {
+  .contentSection {
+    flex-wrap: wrap; }
+  .textBlock {
+    margin-top: 60px;
+    max-width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  section.about_us .subtitleSection {
+    margin-bottom: 70px; }
+  .slide-item {
+    width: 320px;
+    background: #ffffff; } }

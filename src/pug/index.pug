@@ -18,7 +18,7 @@ html(lang="en")
                         .burgerLine
                             span
                         .navigationMenu
-                            a.navigationMenu__link(href="#") ABOUT US
+                            a.navigationMenu__link(href="#about") ABOUT US
                             a.navigationMenu__link(href="#") featured works
                             a.navigationMenu__link(href="#") our services
                             a.navigationMenu__link(href="#") small team
@@ -55,10 +55,35 @@ html(lang="en")
                 .juice
                     img(src="img/juice.png", alt="sok")
 
-        section.about_us
+        section#about.about_us
             .container
                 h2.titleSection ABOUT US
-                h5.discSection Lorem ipsum dolor sit amet event landing template
+                h5.subtitleSection Lorem ipsum dolor sit amet event landing template
+
+                .contentSection
+                    .slider
+                        #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+                            ol.carousel-indicators
+                                li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                                li(data-target='#carouselExampleIndicators' data-slide-to='1')
+                                li(data-target='#carouselExampleIndicators' data-slide-to='2')
+                                li(data-target='#carouselExampleIndicators' data-slide-to='3')
+                            .carousel-inner
+                                .carousel-item.active.slide-item
+                                    img.d-block(src='img/slide.jpg' alt='First slide')
+                                .carousel-item.slide-item
+                                    img.d-block(src='https://best-stroy.ru/foto-statji/24/37/18.jpg?1496925027' alt='First slide')
+                                .carousel-item.slide-item
+                                    img.d-block.w-100(src='https://i.pinimg.com/originals/72/c1/11/72c1116b4e975b04baff1bed17271a6e.png' alt='Third slide')
+                                .carousel-item.slide-item
+                                    img.d-block.w-100(src='https://lh3.googleusercontent.com/proxy/dx9dEUzQouQYsw6Lm2U7Y2p1yt6RhkVXCFCXfsdiVUcjUYY6JezW1tHUy57HTUI4LF2NOOzsaxQL4d3NpO-pTyOXTmOjhJ1N4A5-_gGFgg4_XoELyBtvoGohh38g1Jpkbv-rajRBcyJ5vRtW9oXXBvXr06pe2HEkrMfqhNM3UP-ARhlaIRHvElv2XxZVe8pcAXbNHq4-NK18nGiIp6Wb8p5nlDonIuV-mqx-9FaWoQTcg3-KlrOwPvL8GhDVRSMkRJmpFGGC4lqMMwFF_v3ksnC1XSAGwWlLXhGdYoyHLtPIq6dDSoXk2et8W_hLzUE' alt='Third slide')
+            
+                    .textBlock
+                        h5.textBlock__title We Actually Do amazing works
+                        p.textBlock__text A visual approach is an approach to a runway at an airport conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all times.
+                        p.textBlock__text Preceding aircraft in approach correct sight. conducted under instrument flight rules.
+                        h5.textBlock__title why we are the great?
+                        p.textBlock__text A visual approach is an approach to a runway at an airport conducted under instrument flight rules. The preceding aircraft in approach correct sight.
 
 
 
