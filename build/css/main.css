@@ -175,14 +175,13 @@ section.about_us {
   background-color: #fff;
   padding-top: 140px;
   padding-bottom: 115px; }
-
-.sectionTitle {
-  color: #000000;
-  font-family: Montserrat;
-  font-size: 38px;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase; }
+  section.about_us .sectionTitle {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 38px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase; }
