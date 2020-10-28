@@ -43,21 +43,21 @@ a.logo
     cursor: pointer
     z-index: 1
 
-    //burger na input checket
+    &.active
+        .navigationMenu
+            display: flex
+        .burgerLine
+            span
+                transform: rotate(45deg)
+                &::before
+                    top: 0
+                    transform: rotate(0)
 
-    #burger__toggle
-        opacity: 0
-    #burger__toggle:checked ~ .burgerLine > span 
-        transform: rotate(45deg)
-    #burger__toggle:checked ~ .burgerLine > span::before 
-        top: 0;
-        transform: rotate(0)
-    #burger__toggle:checked ~ .burgerLine > span::after 
-        top: 0
-        transform: rotate(90deg)
-    #burger__toggle:checked ~ .navigationMenu
-        visibility: visible
-        right: 0
+                &::after
+                    top: 0
+                    transform: rotate(90deg)
+
+
 
     .burgerLine
         span 
@@ -94,13 +94,13 @@ a.logo
 
     .navigationMenu
         position: fixed
-        visibility: hidden
         width: 300px
         height: 360px
         right: 0
         top: 40px
         position: absolute
-        display: flex
+        //display: flex
+        display: none
         flex-direction: column
         padding: 15px 0
         background-color: #fff
@@ -124,7 +124,7 @@ a.logo
             text-decoration: none
             border-bottom: 1px solid #52545869
             &:hover
-                background-color:  #52545869
+                background-color:  rgba(118, 244, 234, 0.3)
 
 .headerBlock
     text-align: center
@@ -161,3 +161,10 @@ a.logo
         position: absolute
         top: calc(50% - 30px)
         right: calc(10% - 30px)
+
+
+
+@media screen and ( max-width: 576px )
+    .juice
+        display: none
+    

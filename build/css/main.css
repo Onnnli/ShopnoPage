@@ -63,19 +63,16 @@ a.logo {
   height: 30px;
   cursor: pointer;
   z-index: 1; }
-  .burger #burger__toggle {
-    opacity: 0; }
-  .burger #burger__toggle:checked ~ .burgerLine > span {
+  .burger.active .navigationMenu {
+    display: flex; }
+  .burger.active .burgerLine span {
     transform: rotate(45deg); }
-  .burger #burger__toggle:checked ~ .burgerLine > span::before {
-    top: 0;
-    transform: rotate(0); }
-  .burger #burger__toggle:checked ~ .burgerLine > span::after {
-    top: 0;
-    transform: rotate(90deg); }
-  .burger #burger__toggle:checked ~ .navigationMenu {
-    visibility: visible;
-    right: 0; }
+    .burger.active .burgerLine span::before {
+      top: 0;
+      transform: rotate(0); }
+    .burger.active .burgerLine span::after {
+      top: 0;
+      transform: rotate(90deg); }
   .burger .burgerLine span {
     position: absolute;
     text-align: center;
@@ -105,13 +102,12 @@ a.logo {
     position: absolute; }
   .burger .navigationMenu {
     position: fixed;
-    visibility: hidden;
     width: 300px;
     height: 360px;
     right: 0;
     top: 40px;
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 15px 0;
     background-color: #fff;
@@ -135,7 +131,7 @@ a.logo {
       text-decoration: none;
       border-bottom: 1px solid #52545869; }
       .burger .navigationMenu a:hover {
-        background-color: #52545869; }
+        background-color: rgba(118, 244, 234, 0.3); }
 
 .headerBlock {
   text-align: center;
@@ -170,3 +166,23 @@ a.logo {
     position: absolute;
     top: calc(50% - 30px);
     right: calc(10% - 30px); }
+
+@media screen and (max-width: 576px) {
+  .juice {
+    display: none; } }
+
+section.about_us {
+  background-color: #fff;
+  padding-top: 140px;
+  padding-bottom: 115px; }
+
+.sectionTitle {
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase; }
