@@ -1,0 +1,31 @@
+*
+    box-sizing: border-box
+    
+section.featured-works
+    padding-top: 130px
+    padding-bottom: 125px
+    .container
+        padding: 0
+    .titleSection
+        @include title
+        margin-bottom: 17px
+    .subtitleSection
+        @include subTitle
+        margin-bottom: 122px
+
+.wrapper-works
+    //max-width: 1140px
+    display: grid
+    align-items: center
+    grid-gap: 15px
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr))
+    grid-template-rows: repeat(2, 359px)
+    img
+        margin: 0 auto
+        cursor: pointer
+        &:hover
+            transform: scale(1.2)
+            transition: 500ms ease
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+
+        
