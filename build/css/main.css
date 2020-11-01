@@ -275,12 +275,10 @@ ol.carousel-indicators {
     width: 320px;
     background: #ffffff; } }
 
-* {
-  box-sizing: border-box; }
-
 section.featured-works {
   padding-top: 130px;
-  padding-bottom: 125px; }
+  padding-bottom: 125px;
+  background-color: #f9fbfb; }
   section.featured-works .container {
     padding: 0; }
   section.featured-works .titleSection {
@@ -320,3 +318,193 @@ section.featured-works {
       transform: scale(1.2);
       transition: 500ms ease;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+
+section.our-services {
+  padding: 124px 0; }
+  section.our-services .container {
+    padding: 0; }
+  section.our-services .titleSection {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 38px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 16px; }
+  section.our-services .subtitleSection {
+    color: #000000;
+    font-family: Merriweather;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.62;
+    margin-bottom: 123px; }
+
+.wrapper-service {
+  margin: 0 auto;
+  display: grid;
+  grid-row-gap: 15px;
+  grid-template-columns: repeat(76, 15px);
+  grid-template-rows: 422px repeat(2, 370px); }
+
+.service {
+  object-fit: cover; }
+
+.bcService {
+  padding: 184px 10px 58px 68px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%; }
+
+.service--active {
+  display: none;
+  background-color: #6df6eb;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 63px 10px 56px 68px; }
+  .service--active.active {
+    display: block; }
+  .service--active .titleService--active {
+    color: #ffffff;
+    font-family: Merriweather;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 29px;
+    text-align: left;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: normal;
+    margin-bottom: 27px;
+    color: #000; }
+  .service--active .discService--active {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    letter-spacing: 0.32px;
+    margin-bottom: 55px;
+    max-width: 80%;
+    color: #000;
+    margin-bottom: 75px; }
+  .service--active .close--service {
+    cursor: pointer; }
+    .service--active .close--service .moreSevice {
+      width: 17px;
+      height: 17px; }
+
+.design-cool {
+  background-image: url(../img/service1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  grid-column-start: 1;
+  grid-column-end: 43;
+  position: relative; }
+
+.psd-design {
+  max-width: 645px;
+  position: relative;
+  background-image: url(../img/service2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  grid-column-start: 44;
+  grid-column-end: -1; }
+
+.design-three {
+  position: relative;
+  background-image: url(../img/service3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  grid-column-start: 1;
+  grid-column-end: 43; }
+  .design-three .bcService {
+    padding-top: 135px; }
+
+.design-four {
+  position: relative;
+  background-image: url(../img/sercvice4.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  grid-column-start: 44;
+  grid-column-end: -1; }
+  .design-four .bcService {
+    padding-top: 135px; }
+
+.design-five {
+  position: relative;
+  background-image: url(../img/service5.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  grid-column-start: 1;
+  grid-column-end: 31; }
+  .design-five .bcService {
+    padding-top: 135px; }
+
+.design-six {
+  position: relative;
+  background-image: url(../img/service6.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  grid-column-start: 32;
+  grid-column-end: -1; }
+  .design-six .bcService {
+    padding-top: 135px; }
+
+.titleService {
+  color: #ffffff;
+  font-family: Merriweather;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 29px;
+  text-align: left;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 1px;
+  line-height: normal;
+  margin-bottom: 27px; }
+
+.discService {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  letter-spacing: 0.32px;
+  margin-bottom: 55px;
+  max-width: 90%; }
+
+.moreService {
+  color: #f9fbfb;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 85px;
+  text-transform: uppercase;
+  letter-spacing: 0.72px;
+  line-height: normal;
+  cursor: pointer; }
+
+@media screen and (max-width: 1140px) {
+  .wrapper-service {
+    grid-template-columns: repeat(auto-fit, 15px); } }
