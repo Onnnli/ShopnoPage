@@ -277,8 +277,7 @@ ol.carousel-indicators {
 
 section.featured-works {
   padding-top: 130px;
-  padding-bottom: 125px;
-  background-color: #f9fbfb; }
+  padding-bottom: 125px; }
   section.featured-works .container {
     padding: 0; }
   section.featured-works .titleSection {
@@ -320,7 +319,8 @@ section.featured-works {
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
 
 section.our-services {
-  padding: 124px 0; }
+  padding: 124px 0;
+  background-color: #f9fbfb; }
   section.our-services .container {
     padding: 0; }
   section.our-services .titleSection {
@@ -350,8 +350,8 @@ section.our-services {
 .wrapper-service {
   margin: 0 auto;
   display: grid;
-  grid-row-gap: 15px;
-  grid-template-columns: repeat(76, 15px);
+  grid-gap: 15px;
+  grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 422px repeat(2, 370px); }
 
 .service {
@@ -406,65 +406,59 @@ section.our-services {
       height: 17px; }
 
 .design-cool {
+  grid-area: 1 / 1 / auto / 5;
   background-image: url(../img/service1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  grid-column-start: 1;
-  grid-column-end: 43;
   position: relative; }
 
 .psd-design {
-  max-width: 645px;
+  object-fit: cover;
+  grid-area: 1 / 5 / auto / 8;
   position: relative;
   background-image: url(../img/service2.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
-  grid-column-start: 44;
-  grid-column-end: -1; }
+  background-position: center; }
 
 .design-three {
+  grid-area: 2 / 1 / auto / 5;
   position: relative;
   background-image: url(../img/service3.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
-  grid-column-start: 1;
-  grid-column-end: 43; }
+  background-position: center; }
   .design-three .bcService {
     padding-top: 135px; }
 
 .design-four {
+  grid-area: 2 / 5 / auto / 8;
   position: relative;
   background-image: url(../img/sercvice4.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
-  grid-column-start: 44;
-  grid-column-end: -1; }
+  background-position: center; }
   .design-four .bcService {
     padding-top: 135px; }
 
 .design-five {
+  grid-area: 3 / 1 / auto / 4;
   position: relative;
   background-image: url(../img/service5.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
-  grid-column-start: 1;
-  grid-column-end: 31; }
+  background-position: center; }
   .design-five .bcService {
     padding-top: 135px; }
 
 .design-six {
+  grid-area: 3 / 4 / auto / 8;
   position: relative;
   background-image: url(../img/service6.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
-  grid-column-start: 32;
-  grid-column-end: -1; }
+  background-position: center; }
   .design-six .bcService {
     padding-top: 135px; }
 
@@ -505,6 +499,31 @@ section.our-services {
   line-height: normal;
   cursor: pointer; }
 
-@media screen and (max-width: 1140px) {
+.wrap-more {
+  display: none; }
+  .wrap-more p.show-more {
+    color: #f9fbfb;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 85px;
+    text-transform: uppercase;
+    letter-spacing: 0.72px;
+    line-height: normal;
+    cursor: pointer;
+    color: black; }
+
+@media screen and (max-width: 768px) {
   .wrapper-service {
-    grid-template-columns: repeat(auto-fit, 15px); } }
+    grid-template-rows: 422px;
+    grid-template-columns: 1fr; }
+    .wrapper-service .design-cool, .wrapper-service .psd-design, .wrapper-service .design-three, .wrapper-service .design-five, .wrapper-service .design-four, .wrapper-service .design-six {
+      grid-area: auto; }
+      .wrapper-service .design-cool .bcService, .wrapper-service .psd-design .bcService, .wrapper-service .design-three .bcService, .wrapper-service .design-five .bcService, .wrapper-service .design-four .bcService, .wrapper-service .design-six .bcService {
+        padding-top: 125px; }
+    .wrapper-service .design-five, .wrapper-service .design-four, .wrapper-service .design-six {
+      display: none; }
+  .wrap-more {
+    margin-top: 20px; }
+    .wrap-more p.show-more {
+      display: block; } }

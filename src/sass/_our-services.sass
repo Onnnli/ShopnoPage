@@ -1,5 +1,6 @@
 section.our-services
     padding: 124px 0
+    background-color: #f9fbfb
     .container  
         padding: 0
     .titleSection
@@ -13,10 +14,16 @@ section.our-services
 .wrapper-service
     margin: 0 auto
     display: grid
-    grid-row-gap: 15px
+    grid-gap: 15px
     //grid-template-columns: repeat(auto-fill, minmax(15px, 1fr))
-    grid-template-columns: repeat(76, 15px)
+    //grid-template-columns: repeat(76, 15px)
+    //grid-template-columns: repeat(auto-fill, minmax(15px, 1fr))
+    // grid-template-rows: minmax(422px, auto)
+
+    grid-template-columns: repeat(7, 1fr)
     grid-template-rows: 422px repeat(2, 370px)
+
+  
 
 .service
     object-fit: cover
@@ -27,9 +34,7 @@ section.our-services
     width: 100%
     height: 100%
 
-
 .service--active
-
     display: none
     background-color: #6df6eb
     width: 100%
@@ -56,74 +61,67 @@ section.our-services
     
 
 .design-cool
+    grid-area: 1 / 1 / auto / 5
     background-image: url(../img/service1.jpg)
     background-repeat: no-repeat
     background-size: contain
     background-position: center
-    grid-column-start: 1
-    grid-column-end: 43
+    // grid-column-start: 1
+    // grid-column-end: 43
     position: relative
 
 .psd-design
-    max-width: 645px
+    object-fit: cover
+    grid-area: 1 / 5 / auto / 8
     position: relative
     background-image: url(../img/service2.jpg)
     background-repeat: no-repeat
     background-size: contain
     background-position:  center
-    grid-column-start: 44
-    grid-column-end: -1
     
 
 .design-three
+    grid-area: 2 / 1 / auto / 5
     position: relative
     background-image: url(../img/service3.jpg)
     background-repeat: no-repeat
     background-size: contain
     background-position: center
-    grid-column-start: 1
-    grid-column-end: 43
     .bcService
         padding-top: 135px
 
 .design-four
+    grid-area: 2 / 5 / auto / 8
+
     position: relative
     background-image: url(../img/sercvice4.jpg)
     background-repeat: no-repeat
     background-size: contain
     background-position:  center
-    grid-column-start: 44
-    grid-column-end: -1
     .bcService
         padding-top: 135px
 
 .design-five
+    grid-area: 3 / 1 / auto / 4
+
     position: relative
     background-image: url(../img/service5.jpg)
     background-repeat: no-repeat
     background-size: contain
     background-position:  center
-    grid-column-start: 1
-    grid-column-end: 31
     .bcService
         padding-top: 135px
 
 .design-six
+    grid-area: 3 / 4 / auto / 8
+
     position: relative
     background-image: url(../img/service6.jpg)
     background-repeat: no-repeat
     background-size: contain
     background-position:  center
-    grid-column-start: 32
-    grid-column-end: -1
     .bcService
         padding-top: 135px
-
-
-
-
-
-
 
 .titleService
     @include titleService
@@ -135,8 +133,29 @@ section.our-services
 .moreService
     @include more
     cursor: pointer
+
+
+
+.wrap-more
+    display: none
+    p.show-more
+        @include more
+        cursor: pointer
+        color: black    
    
 
-@media screen and ( max-width: 1140px )
+@media screen and ( max-width: 768px)
     .wrapper-service
-        grid-template-columns: repeat(auto-fit, 15px)
+        grid-template-rows: 422px 
+        grid-template-columns: 1fr;
+        .design-cool, .psd-design, .design-three, .design-five, .design-four, .design-six
+            grid-area: auto    
+            .bcService 
+                padding-top: 125px
+            
+        .design-five, .design-four, .design-six
+            display: none
+    .wrap-more
+        margin-top: 20px
+        p.show-more
+            display: block
