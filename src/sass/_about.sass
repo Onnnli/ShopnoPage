@@ -11,31 +11,33 @@ section.about_us
     .subtitleSection    
         @include subTitle
         margin-bottom: 147px
+    #carouselExampleIndicators.carousel.slide
+        max-width: 480px
+    ol.carousel-indicators
+        position: absolute
+        bottom: -45px
+        margin: 0
+        li
+            margin-right: 1.5px
+            margin-left: 1.5px
+            width: 11px 
+            height: 10px
+            border-radius: 50% 
+            background-color: #d0d0d0
+            &.active
+                background-color: #71f6eb
 
 .contentSection
     display: flex
     justify-content: space-around
     align-items: center
 
-#carouselExampleIndicators.carousel.slide
-    max-width: 480px
+
 
 .slide
     position: relative
 
-ol.carousel-indicators
-    position: absolute
-    bottom: -45px
-    margin: 0
-    li
-        margin-right: 1.5px
-        margin-left: 1.5px
-        width: 11px 
-        height: 10px
-        border-radius: 50% 
-        background-color: #d0d0d0
-        &.active
-            background-color: #71f6eb
+
 .slide-item
     width:  480px
     background: #eff0f2 linear-gradient(0deg, white 12%, transparent 0%)

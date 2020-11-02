@@ -141,7 +141,7 @@ section.our-services
     p.show-more
         @include more
         cursor: pointer
-        color: black    
+        color: #000000    
    
 
 @media screen and ( max-width: 768px)
@@ -155,7 +155,13 @@ section.our-services
             
         .design-five, .design-four, .design-six
             display: none
-    .wrap-more
-        margin-top: 20px
-        p.show-more
+        .design-five.active, .design-four.active, .design-six.active
             display: block
+    .wrap-more
+        width: 150px
+        margin: 0 auto
+        display: block
+        margin-top: 20px
+
+    .wrap-more.active
+        display: none   

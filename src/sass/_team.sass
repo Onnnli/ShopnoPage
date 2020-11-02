@@ -1,0 +1,168 @@
+section.team
+    padding: 122px 0 118px 0
+    .container
+        padding: 0
+
+h2.titleSection
+    @include title
+    margin-bottom: 15px
+h5.subtitleSection
+    @include subTitle
+    margin-bottom: 123px
+
+.teamBlock
+    display: grid
+    grid-row-gap: 10px
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr))
+    grid-auto-rows:  minmax(auto, 440px)
+
+.teamItem__one
+    background-image: url(../img/team_1.jpg)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    position: relative
+    &:hover
+        transform: scale(1.2)
+        transition: 500ms ease
+        z-index: 1
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+        .teamItem__hover
+            display: block
+
+.teamItem__two
+    background-image: url(../img/team_2.jpg)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    position: relative
+    &:hover
+        transform: scale(1.2)
+        transition: 500ms ease
+        z-index: 1
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+        .teamItem__hover
+            display: block
+
+.teamItem__three
+    background-image: url(../img/team_3.jpg)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    position: relative
+    &:hover
+        transform: scale(1.2)
+        transition: 500ms ease
+        z-index: 1
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+        .teamItem__hover
+            display: block
+
+.teamItem__four
+    background-image: url(../img/team_4.jpg)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    position: relative
+    &:hover
+        transform: scale(1.2)
+        transition: 500ms ease
+        z-index: 1
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+        .teamItem__hover
+            display: block
+
+.teamItem__five
+    background-image: url(../img/team_5.jpg)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    position: relative
+    &:hover
+        transform: scale(1.2)
+        transition: 500ms ease
+        z-index: 1
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+        .teamItem__hover
+            display: block
+
+.teamItem__six
+    background-image: url(../img/team_1.jpg)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    position: relative
+    &:hover
+        transform: scale(1.2)
+        transition: 500ms ease
+        z-index: 1
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+        .teamItem__hover
+            display: block
+
+
+
+
+
+
+
+
+
+
+
+
+
+.teamItem__hover
+    display: none
+    position: absolute
+    max-width: 336px
+    background-color: #fff
+    box-shadow: 3px 6px 16px rgba(20, 20, 21, 0.18)
+    background-color: #6df6eb
+    bottom: 15px
+    left: calc(50% - 168px)
+    padding: 43px 50px 42px 38px
+    &::before
+        content: ''
+        position: absolute
+        border: 14px solid transparent
+        border-bottom: 20px solid #6df6eb
+        top: -30px
+    .title__hover
+        color: #000000;
+        font-family: "Merriweather - Bold"
+        font-size: 20px
+        font-weight: 700
+        font-style: normal
+        letter-spacing: 0.6px
+        line-height: normal
+        margin-bottom: 23px
+        span
+            font-size: 15px
+            font-family: "Merriweather - Regular"
+            font-weight: 400
+            font-style: italic
+            letter-spacing: 0.45px
+            line-height: normal
+            color: #767070
+    .disc__hover
+        color: #000000
+        font-family: Raleway
+        font-size: 16px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 24px
+        text-align: left
+        margin-bottom: 35px
+    .contacts__hover
+        a
+            text-decoration: none
+            color: rgba(0, 0, 0, 0.7)
+            font-size: 13px
+            font-weight: 400
+            margin: 0 7px 0 7px
+            &:first-child
+                margin-left: 0
+
+                

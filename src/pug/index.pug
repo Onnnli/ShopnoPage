@@ -4,6 +4,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(href='https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500&display=swap' rel='stylesheet')
         link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous')
+        link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
         link(rel="stylesheet", href="css/main.css")
         title Shopno one page
     body
@@ -19,9 +20,9 @@ html(lang="en")
                             span
                         .navigationMenu
                             a.navigationMenu__link(href="#about") ABOUT US
-                            a.navigationMenu__link(href="#") featured works
-                            a.navigationMenu__link(href="#") our services
-                            a.navigationMenu__link(href="#") small team
+                            a.navigationMenu__link(href="#featured") featured works
+                            a.navigationMenu__link(href="#service") our services
+                            a.navigationMenu__link(href="#team") small team
                             a.navigationMenu__link(href="#") what they says
                             a.navigationMenu__link(href="#") contacts
                 .headerBlock
@@ -85,7 +86,7 @@ html(lang="en")
                         h5.textBlock__title why we are the great?
                         p.textBlock__text A visual approach is an approach to a runway at an airport conducted under instrument flight rules. The preceding aircraft in approach correct sight.
 
-        section.featured-works
+        section#featured.featured-works
             .container
                 h2.titleSection featured works
                 h5.subtitleSection Lorem ipsum dolor sit amet event landing template
@@ -185,12 +186,184 @@ html(lang="en")
                 .wrap-more
                     p.show-more Show more...
 
+        section#team.team
+            .container
+                h2.titleSection small team
+                h5.subtitleSection Lorem ipsum dolor sit amet event landing template
+
+                .teamBlock
+                    .teamItem__one
+                        .teamItem__hover
+                            h4.title__hover AL RAYHAN 
+                                span / UI Designer
+                            p.disc__hover Lorem Ipsum is not simply is  an action designer random text It has roots in a piece. 
+                            .contacts__hover
+                                a(href="#") 
+                                    i.fab.fa-facebook-f
+                                a(href="#")
+                                    i.fab.fa-twitter
+                                a(href="#")
+                                    i.fab.fa-dribbble
+                                a(href="#")
+                                    i.far.fa-envelope
+
+                    .teamItem__two
+                        .teamItem__hover
+                            h4.title__hover AL RAYHAN 
+                                span / UI Designer
+                            p.disc__hover Lorem Ipsum is not simply is  an action designer random text It has roots in a piece. 
+                            .contacts__hover
+                                a(href="#") 
+                                    i.fab.fa-facebook-f
+                                a(href="#")
+                                    i.fab.fa-twitter
+                                a(href="#")
+                                    i.fab.fa-dribbble
+                                a(href="#")
+                                    i.far.fa-envelope                
+
+                    .teamItem__three
+                        .teamItem__hover
+                            h4.title__hover AL RAYHAN 
+                                span / UI Designer
+                            p.disc__hover Lorem Ipsum is not simply is  an action designer random text It has roots in a piece. 
+                            .contacts__hover
+                                a(href="#") 
+                                    i.fab.fa-facebook-f
+                                a(href="#")
+                                    i.fab.fa-twitter
+                                a(href="#")
+                                    i.fab.fa-dribbble
+                                a(href="#")
+                                    i.far.fa-envelope     
+
+                    .teamItem__four
+                        .teamItem__hover
+                            h4.title__hover AL RAYHAN 
+                                span / UI Designer
+                            p.disc__hover Lorem Ipsum is not simply is  an action designer random text It has roots in a piece. 
+                            .contacts__hover
+                                a(href="#") 
+                                    i.fab.fa-facebook-f
+                                a(href="#")
+                                    i.fab.fa-twitter
+                                a(href="#")
+                                    i.fab.fa-dribbble
+                                a(href="#")
+                                    i.far.fa-envelope 
+
+                    .teamItem__five
+                        .teamItem__hover
+                            h4.title__hover AL RAYHAN 
+                                span / UI Designer
+                            p.disc__hover Lorem Ipsum is not simply is  an action designer random text It has roots in a piece. 
+                            .contacts__hover
+                                a(href="#") 
+                                    i.fab.fa-facebook-f
+                                a(href="#")
+                                    i.fab.fa-twitter
+                                a(href="#")
+                                    i.fab.fa-dribbble
+                                a(href="#")
+                                    i.far.fa-envelope 
+
+                    .teamItem__six
+                        .teamItem__hover
+                            h4.title__hover AL RAYHAN 
+                                span / UI Designer
+                            p.disc__hover Lorem Ipsum is not simply is  an action designer random text It has roots in a piece. 
+                            .contacts__hover
+                                a(href="#") 
+                                    i.fab.fa-facebook-f
+                                a(href="#")
+                                    i.fab.fa-twitter
+                                a(href="#")
+                                    i.fab.fa-dribbble
+                                a(href="#")
+                                    i.far.fa-envelope 
+
+        section#says.says
+            .container
+                h2.titleSection what they says
+                h5.subtitleSection Lorem ipsum dolor sit amet event landing template
+                // Slider main container
+                .swiper-container
+                    .swiper-wrapper
+                        // Slides
+                        .swiper-slide 
+                            .slide__says
+                                .imgSlide
+                                    img(src="img/team_1.jpg", alt="team")
+                                .textSlide
+                                    h4.title__slide AL RAYHAN 
+                                        span / UI Designer
+                                    p.disc__slide Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    .stars
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                        .swiper-slide 
+                            .slide__says
+                                .imgSlide
+                                    img(src="img/team_3.jpg", alt="team")
+                                .textSlide
+                                    h4.title__slide AL RAYHAN 
+                                        span / UI Designer
+                                    p.disc__slide Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    .stars
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                        .swiper-slide 
+                            .slide__says
+                                .imgSlide
+                                    img(src="img/team_2.jpg", alt="team")
+                                .textSlide
+                                    h4.title__slide AL RAYHAN 
+                                        span / UI Designer
+                                    p.disc__slide Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    .stars
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                        
+                    // If we need pagination
+                    .swiper-pagination
+                    // If we need navigation buttons
+                    .swiper-button-prev
+                    .swiper-button-next
+    
+
+
+
+                    //- .slide__says
+                    //-     .imgSlide
+                    //-         img(src="img/team_1.jpg", alt="team")
+                    //-     .textSlide
+                    //-         h4.title__slide AL RAYHAN 
+                    //-             span / UI Designer
+                    //-         p.disc__slide Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    //-         .stars
+                    //-             i.fas.fa-star
+                    //-             i.fas.fa-star
+                    //-             i.fas.fa-star
+                    //-             i.fas.fa-star
+                    //-             i.fas.fa-star
+
+
+    
 
 
 
 
-
-
+        //swiper
+        script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
         //font awesome
         script(src="https://kit.fontawesome.com/9bdc228e6a.js" crossorigin="anonymous")
         //bootstrap          
