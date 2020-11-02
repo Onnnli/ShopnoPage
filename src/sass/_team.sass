@@ -23,10 +23,6 @@ h5.subtitleSection
     background-position: center
     position: relative
     &:hover
-        transform: scale(1.2)
-        transition: 500ms ease
-        z-index: 1
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
         .teamItem__hover
             display: block
 
@@ -37,10 +33,6 @@ h5.subtitleSection
     background-position: center
     position: relative
     &:hover
-        transform: scale(1.2)
-        transition: 500ms ease
-        z-index: 1
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
         .teamItem__hover
             display: block
 
@@ -51,10 +43,6 @@ h5.subtitleSection
     background-position: center
     position: relative
     &:hover
-        transform: scale(1.2)
-        transition: 500ms ease
-        z-index: 1
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
         .teamItem__hover
             display: block
 
@@ -65,10 +53,6 @@ h5.subtitleSection
     background-position: center
     position: relative
     &:hover
-        transform: scale(1.2)
-        transition: 500ms ease
-        z-index: 1
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
         .teamItem__hover
             display: block
 
@@ -79,10 +63,6 @@ h5.subtitleSection
     background-position: center
     position: relative
     &:hover
-        transform: scale(1.2)
-        transition: 500ms ease
-        z-index: 1
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
         .teamItem__hover
             display: block
 
@@ -93,24 +73,8 @@ h5.subtitleSection
     background-position: center
     position: relative
     &:hover
-        transform: scale(1.2)
-        transition: 500ms ease
-        z-index: 1
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
         .teamItem__hover
             display: block
-
-
-
-
-
-
-
-
-
-
-
-
 
 .teamItem__hover
     display: none
@@ -165,4 +129,21 @@ h5.subtitleSection
             &:first-child
                 margin-left: 0
 
-                
+@media screen and ( max-width: 576px )
+    section.team
+        padding: 70px 0
+        .titleSection
+            margin-bottom: 16px
+            font-size: 25px
+        .subtitleSection
+            font-size: 13px
+            margin-bottom: 70px 
+
+
+
+@media screen and ( max-width: 378px )
+    .teamBlock
+        max-width: 320px
+        margin: 0 auto
+        grid-template-columns: repeat(auto-fit, 320px)
+           

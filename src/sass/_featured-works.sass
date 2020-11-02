@@ -17,6 +17,7 @@ section.featured-works
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr))
     grid-template-rows: repeat(2, 359px)
     img
+        object-fit: cover
         margin: 0 auto
         cursor: pointer
         &:hover
@@ -24,4 +25,33 @@ section.featured-works
             transition: 500ms ease
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
 
-        
+
+@media screen and ( max-width: 992px )
+    .wrapper-works
+        img
+            &:hover
+                transform: none
+                transition: none
+                box-shadow: none
+
+
+@media screen and ( max-width: 576px )
+    section.featured-works
+        padding: 70px 0
+        .titleSection
+            margin-bottom: 16px
+            font-size: 25px
+        .subtitleSection
+            font-size: 13px
+            margin-bottom: 70px 
+    
+    .wrapper-works
+        grid-gap: 0
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+        grid-auto-rows: auto
+@media screen and ( max-width: 370px )
+    .wrapper-works
+        max-width: 320px
+        margin: 0 auto
+        img
+            max-width: 320px

@@ -266,9 +266,15 @@ section.about_us {
     margin-top: 60px;
     max-width: 100%; } }
 
-@media screen and (max-width: 500px) {
-  section.about_us .subtitleSection {
-    margin-bottom: 70px; }
+@media screen and (max-width: 576px) {
+  section.about_us {
+    padding: 70px 0; }
+    section.about_us .titleSection {
+      margin-bottom: 16px;
+      font-size: 25px; }
+    section.about_us .subtitleSection {
+      font-size: 13px;
+      margin-bottom: 70px; }
   .slide-item {
     width: 320px;
     background: #ffffff; } }
@@ -309,12 +315,40 @@ section.featured-works {
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   grid-template-rows: repeat(2, 359px); }
   .wrapper-works img {
+    object-fit: cover;
     margin: 0 auto;
     cursor: pointer; }
     .wrapper-works img:hover {
       transform: scale(1.2);
       transition: 500ms ease;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+
+@media screen and (max-width: 992px) {
+  .wrapper-works img:hover {
+    transform: none;
+    transition: none;
+    box-shadow: none; } }
+
+@media screen and (max-width: 576px) {
+  section.featured-works {
+    padding: 70px 0; }
+    section.featured-works .titleSection {
+      margin-bottom: 16px;
+      font-size: 25px; }
+    section.featured-works .subtitleSection {
+      font-size: 13px;
+      margin-bottom: 70px; }
+  .wrapper-works {
+    grid-gap: 0;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: auto; } }
+
+@media screen and (max-width: 370px) {
+  .wrapper-works {
+    max-width: 320px;
+    margin: 0 auto; }
+    .wrapper-works img {
+      max-width: 320px; } }
 
 section.our-services {
   padding: 124px 0;
@@ -356,7 +390,10 @@ section.our-services {
   object-fit: cover; }
 
 .bcService {
-  padding: 184px 10px 58px 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 165px 10px 55px 65px;
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%; }
@@ -367,9 +404,11 @@ section.our-services {
   width: 100%;
   height: 100%;
   position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 63px 10px 56px 68px; }
   .service--active.active {
-    display: block; }
+    display: flex; }
   .service--active .titleService--active {
     color: #ffffff;
     font-family: Merriweather;
@@ -384,6 +423,7 @@ section.our-services {
     letter-spacing: 1px;
     line-height: normal;
     margin-bottom: 27px;
+    margin: 0;
     color: #000; }
   .service--active .discService--active {
     color: #ffffff;
@@ -394,10 +434,12 @@ section.our-services {
     text-align: left;
     letter-spacing: 0.32px;
     margin-bottom: 55px;
+    margin: 0;
     max-width: 80%;
-    color: #000;
-    margin-bottom: 75px; }
+    color: #000; }
   .service--active .close--service {
+    width: 16px;
+    height: 16px;
     cursor: pointer; }
     .service--active .close--service .moreSevice {
       width: 17px;
@@ -405,7 +447,7 @@ section.our-services {
 
 .design-cool {
   grid-area: 1 / 1 / auto / 5;
-  background-image: url(../img/service1.jpg);
+  background-image: url("../img/service1.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -415,7 +457,7 @@ section.our-services {
   object-fit: cover;
   grid-area: 1 / 5 / auto / 8;
   position: relative;
-  background-image: url(../img/service2.jpg);
+  background-image: url("../img/service2.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; }
@@ -423,42 +465,34 @@ section.our-services {
 .design-three {
   grid-area: 2 / 1 / auto / 5;
   position: relative;
-  background-image: url(../img/service3.jpg);
+  background-image: url("../img/service3.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; }
-  .design-three .bcService {
-    padding-top: 135px; }
 
 .design-four {
   grid-area: 2 / 5 / auto / 8;
   position: relative;
-  background-image: url(../img/sercvice4.jpg);
+  background-image: url("../img/sercvice4.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; }
-  .design-four .bcService {
-    padding-top: 135px; }
 
 .design-five {
   grid-area: 3 / 1 / auto / 4;
   position: relative;
-  background-image: url(../img/service5.jpg);
+  background-image: url("../img/service5.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; }
-  .design-five .bcService {
-    padding-top: 135px; }
 
 .design-six {
   grid-area: 3 / 4 / auto / 8;
   position: relative;
-  background-image: url(../img/service6.jpg);
+  background-image: url("../img/service6.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; }
-  .design-six .bcService {
-    padding-top: 135px; }
 
 .titleService {
   color: #ffffff;
@@ -473,7 +507,8 @@ section.our-services {
   font-style: normal;
   letter-spacing: 1px;
   line-height: normal;
-  margin-bottom: 27px; }
+  margin-bottom: 27px;
+  margin: 0; }
 
 .discService {
   color: #ffffff;
@@ -484,7 +519,8 @@ section.our-services {
   text-align: left;
   letter-spacing: 0.32px;
   margin-bottom: 55px;
-  max-width: 90%; }
+  max-width: 90%;
+  margin: 0; }
 
 .moreService {
   color: #f9fbfb;
@@ -511,18 +547,29 @@ section.our-services {
     cursor: pointer;
     color: #000000; }
 
+@media screen and (max-width: 992px) {
+  .wrapper-service {
+    max-width: 768px;
+    margin: 0 auto; } }
+
 @media screen and (max-width: 768px) {
   .wrapper-service {
+    max-width: 576px;
+    margin: 0 auto;
     grid-template-rows: 422px;
     grid-template-columns: 1fr; }
     .wrapper-service .design-cool, .wrapper-service .psd-design, .wrapper-service .design-three, .wrapper-service .design-five, .wrapper-service .design-four, .wrapper-service .design-six {
       grid-area: auto; }
-      .wrapper-service .design-cool .bcService, .wrapper-service .psd-design .bcService, .wrapper-service .design-three .bcService, .wrapper-service .design-five .bcService, .wrapper-service .design-four .bcService, .wrapper-service .design-six .bcService {
-        padding-top: 125px; }
     .wrapper-service .design-five, .wrapper-service .design-four, .wrapper-service .design-six {
       display: none; }
     .wrapper-service .design-five.active, .wrapper-service .design-four.active, .wrapper-service .design-six.active {
       display: block; }
+  .service--active {
+    padding: 20px 10px 20px; }
+    .service--active .titleService--active {
+      font-size: 16px; }
+    .service--active .discService--active {
+      font-size: 14px; }
   .wrap-more {
     width: 150px;
     margin: 0 auto;
@@ -530,6 +577,34 @@ section.our-services {
     margin-top: 20px; }
   .wrap-more.active {
     display: none; } }
+
+@media screen and (max-width: 576px) {
+  section.our-services {
+    padding: 70px 0; }
+    section.our-services .titleSection {
+      margin-bottom: 16px;
+      font-size: 25px; }
+    section.our-services .subtitleSection {
+      font-size: 13px;
+      margin-bottom: 70px; }
+  .wrapper-service {
+    max-width: 300px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-auto-rows: 422px; }
+  .bcService {
+    justify-content: space-around;
+    padding: 50px 5px 50px 20px; }
+  .titleService {
+    font-size: 16px; }
+  .discService {
+    font-size: 14px; } }
+
+@media screen and (max-width: 378px) {
+  .wrapper-service {
+    max-width: 320px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, 320px); } }
 
 section.team {
   padding: 122px 0 118px 0; }
@@ -573,13 +648,8 @@ h5.subtitleSection {
   background-size: contain;
   background-position: center;
   position: relative; }
-  .teamItem__one:hover {
-    transform: scale(1.2);
-    transition: 500ms ease;
-    z-index: 1;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
-    .teamItem__one:hover .teamItem__hover {
-      display: block; }
+  .teamItem__one:hover .teamItem__hover {
+    display: block; }
 
 .teamItem__two {
   background-image: url(../img/team_2.jpg);
@@ -587,13 +657,8 @@ h5.subtitleSection {
   background-size: contain;
   background-position: center;
   position: relative; }
-  .teamItem__two:hover {
-    transform: scale(1.2);
-    transition: 500ms ease;
-    z-index: 1;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
-    .teamItem__two:hover .teamItem__hover {
-      display: block; }
+  .teamItem__two:hover .teamItem__hover {
+    display: block; }
 
 .teamItem__three {
   background-image: url(../img/team_3.jpg);
@@ -601,13 +666,8 @@ h5.subtitleSection {
   background-size: contain;
   background-position: center;
   position: relative; }
-  .teamItem__three:hover {
-    transform: scale(1.2);
-    transition: 500ms ease;
-    z-index: 1;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
-    .teamItem__three:hover .teamItem__hover {
-      display: block; }
+  .teamItem__three:hover .teamItem__hover {
+    display: block; }
 
 .teamItem__four {
   background-image: url(../img/team_4.jpg);
@@ -615,13 +675,8 @@ h5.subtitleSection {
   background-size: contain;
   background-position: center;
   position: relative; }
-  .teamItem__four:hover {
-    transform: scale(1.2);
-    transition: 500ms ease;
-    z-index: 1;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
-    .teamItem__four:hover .teamItem__hover {
-      display: block; }
+  .teamItem__four:hover .teamItem__hover {
+    display: block; }
 
 .teamItem__five {
   background-image: url(../img/team_5.jpg);
@@ -629,13 +684,8 @@ h5.subtitleSection {
   background-size: contain;
   background-position: center;
   position: relative; }
-  .teamItem__five:hover {
-    transform: scale(1.2);
-    transition: 500ms ease;
-    z-index: 1;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
-    .teamItem__five:hover .teamItem__hover {
-      display: block; }
+  .teamItem__five:hover .teamItem__hover {
+    display: block; }
 
 .teamItem__six {
   background-image: url(../img/team_1.jpg);
@@ -643,13 +693,8 @@ h5.subtitleSection {
   background-size: contain;
   background-position: center;
   position: relative; }
-  .teamItem__six:hover {
-    transform: scale(1.2);
-    transition: 500ms ease;
-    z-index: 1;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
-    .teamItem__six:hover .teamItem__hover {
-      display: block; }
+  .teamItem__six:hover .teamItem__hover {
+    display: block; }
 
 .teamItem__hover {
   display: none;
@@ -702,6 +747,22 @@ h5.subtitleSection {
     margin: 0 7px 0 7px; }
     .teamItem__hover .contacts__hover a:first-child {
       margin-left: 0; }
+
+@media screen and (max-width: 576px) {
+  section.team {
+    padding: 70px 0; }
+    section.team .titleSection {
+      margin-bottom: 16px;
+      font-size: 25px; }
+    section.team .subtitleSection {
+      font-size: 13px;
+      margin-bottom: 70px; } }
+
+@media screen and (max-width: 378px) {
+  .teamBlock {
+    max-width: 320px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, 320px); } }
 
 section.says {
   padding: 121px 0 129px 0; }
@@ -784,7 +845,7 @@ section.says {
         margin-right: 0; }
 
 .swiper-container .swiper-wrapper {
-  height: 70%; }
+  height: 477px; }
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
   width: 53px;
@@ -836,14 +897,26 @@ section.says {
   section.says .imgSlide img {
     max-width: 250px; }
   .swiper-container .swiper-wrapper {
-    height: 60%; } }
+    height: 370px; } }
 
 @media screen and (max-width: 576px) {
-  section.says .slide__says {
-    align-items: center; }
-  section.says .imgSlide {
-    display: none; }
+  section.says {
+    padding: 70px 0; }
+    section.says .titleSection {
+      margin-bottom: 16px;
+      font-size: 25px; }
+    section.says .subtitleSection {
+      font-size: 13px;
+      margin-bottom: 70px; }
+    section.says .slide__says {
+      align-items: center; }
+    section.says .imgSlide {
+      display: none; }
   .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
     width: 100%; }
   .swiper-container .swiper-wrapper {
-    height: 50%; } }
+    height: 300px; } }
+
+@media screen and (max-width: 382px) {
+  .swiper-container .swiper-wrapper {
+    height: 335px; } }

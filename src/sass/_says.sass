@@ -17,7 +17,6 @@ section.says
         width: 100%
         background: #eff0f2 linear-gradient(0deg, white 12%, transparent 0%)
         background-position-y: 25px
-        //margin-right: 82px
         img 
             display: block
             max-width: 320px    
@@ -73,7 +72,7 @@ section.says
 
 .swiper-container
     .swiper-wrapper
-        height: 70%
+        height: 477px
 
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev
@@ -130,10 +129,17 @@ section.says
             img
                 max-width: 250px
     .swiper-container .swiper-wrapper 
-        height: 60%
+        height: 370px
 
 @media screen and ( max-width: 576px )
     section.says
+        padding: 70px 0
+        .titleSection
+            margin-bottom: 16px
+            font-size: 25px
+        .subtitleSection
+            font-size: 13px
+            margin-bottom: 70px   
         .slide__says
             align-items: center
         .imgSlide
@@ -143,4 +149,8 @@ section.says
         width: 100%
 
     .swiper-container .swiper-wrapper 
-        height: 50%
+        height: 300px
+
+@media screen and ( max-width: 382px )
+    .swiper-container .swiper-wrapper
+        height: 335px   
