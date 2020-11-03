@@ -1,0 +1,120 @@
+section.contacts
+    padding: 121px 0
+    background-image: url(../img/2-layers.png)
+    background-repeat: no-repeat
+    background-size: 107%
+    background-position: center bottom 65%
+
+.wrap-contacts
+    display: flex
+    justify-content: space-between  
+
+.messageBlock
+    padding: 47px 31px 38px 31px
+    background-color: rgba(2, 22, 35, .71)
+    max-width: 660px
+    box-shadow: 0 0 30px rgba(21, 21, 21, 0.12)
+    margin-right: 10px
+    width: 100%
+.contactsForm
+    display: flex
+    flex-direction: column
+    
+    input, textarea
+        padding-left: 4px
+        padding-bottom: 17px
+        height: 30px
+        outline: none
+        background-color: transparent
+        
+        color: #ffffffb0
+        font-family: Raleway
+        font-size: 15px
+        font-weight: 400
+        line-height: 51px
+        margin-bottom: 30px
+        border: none
+        border-bottom: 1px solid #ffffff
+        -webkit-input-placeholder
+            color:  #ffffffec 
+        -moz-placeholder
+            color:  #ffffffab
+    textarea
+        min-height: 105px
+    button
+        width: 255px
+        border-radius: 2px
+        background-color: #6eeee3c9
+        outline: none
+        border: none
+        padding: 20px 37px
+        color: #000000d7
+        font-family: Montserrat
+        font-size: 18px
+        font-weight: 400
+        line-height: 28px
+        text-align: left
+        text-transform: uppercase
+        letter-spacing: 2.16px
+        &:hover
+            background-color:#5abbb3
+    
+.contactsBlock
+    padding: 36px 22px 19px 22px
+    background-color: rgba(2, 22, 35, .71)
+    box-shadow: 0 0 30px rgba(21, 21, 21, 0.12)
+    max-width: 504px
+    width: 100%
+.contactsBlock__adress
+    padding-left: 8px
+    color: #ffffffab
+    font-family: Raleway
+    font-size: 15px
+    font-weight: 400
+    line-height: 24px
+    text-align: left
+    margin-bottom: 23px
+    a
+        text-decoration: none
+        color: #ffffffab
+
+.contactsBlock__map
+    overflow: hidden
+    padding-bottom: 60.25%
+    position: relative
+    height: 0
+    iframe
+        left: 0
+        top: 0
+        height: 100%
+        width: 100%
+        position: absolute
+
+
+@media screen and ( max-width: 768px )
+    section.contacts
+        background-size: 160%
+    .wrap-contacts
+        flex-direction: column
+        > div
+            margin: 0
+            margin-bottom: 10px
+            margin-top: 10px
+            max-width: 100%
+    
+    .contactsForm
+        button
+            margin: 0 auto
+        
+
+@media screen and ( max-width: 576px )
+    section.contacts
+        padding: 70px 0
+    
+    .contactsForm
+        button
+            padding: 10px 20px 
+            width: 200px
+            font-size: 16px
+            font-weight: 400
+            line-height: normal
