@@ -346,7 +346,8 @@ section.featured-works {
 @media screen and (max-width: 370px) {
   .wrapper-works {
     max-width: 320px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    grid-template-rows: auto; }
     .wrapper-works img {
       max-width: 320px; } }
 
@@ -918,6 +919,13 @@ section.says {
     height: 300px; } }
 
 @media screen and (max-width: 382px) {
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    left: calc(100% - 100px); }
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    width: 40px;
+    height: 40px; }
   .swiper-container .swiper-wrapper {
     height: 335px; } }
 
@@ -931,6 +939,10 @@ section.logotype {
 @media screen and (max-width: 768px) {
   section.logotype {
     padding: 70px 0; } }
+
+@media screen and (max-width: 370px) {
+  section.logotype {
+    padding: 20px 0; } }
 
 section.contacts {
   padding: 121px 0;
